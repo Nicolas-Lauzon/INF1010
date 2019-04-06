@@ -12,7 +12,7 @@
 
 #include <set>
 
-class GestionnaireTables // TODO : Ajouter l'héritage 
+class GestionnaireTables : public GestionnaireGenerique<Table* , set<Table*>> // TODO : Ajouter l'héritage 
 {
 public:
 	GestionnaireTables() = default;

@@ -1,0 +1,142 @@
+﻿  ClientPrestige.cpp
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(47): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(47): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(47): error C2238: jetons inattendus avant ';'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(71): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(71): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(71): error C2238: jetons inattendus avant ';'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(80): error C2065: 'Menu' : identificateur non déclaré
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(80): error C2059: erreur de syntaxe : '>'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(81): error C2065: 'Menu' : identificateur non déclaré
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(81): error C2059: erreur de syntaxe : '>'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(82): error C2065: 'Menu' : identificateur non déclaré
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(82): error C2059: erreur de syntaxe : '>'
+  GestionnairePlats.cpp
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\gestionnaireplats.cpp(101): error C2143: erreur de syntaxe : absence de ';' avant '}'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\gestionnaireplats.cpp(109): error C2084: la fonction 'void GestionnairePlats::lirePlats(const std::string &,TypeMenu)' a déjà un corps
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\gestionnaireplats.cpp(15): note: voir la définition précédente de 'lirePlats'
+  GestionnaireTables.cpp
+c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\xutility(1108): error C2064: le terme ne correspond pas à une fonction qui prend 2 arguments
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\xutility(1108): note: la classe ne définit pas un 'operator()' ou un opérateur de conversion défini par l'utilisateur en pointeur de fonction ou référence de fonction qui accepte le nombre d'arguments approprié
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\xutility(1107): note: voir la référence à l'instanciation de la fonction modèle 'bool std::_Debug_lt_pred<_Pr&,Table*const &,Table*const &>(GestionnaireTables::getMeilleureTable::<lambda_3265f62ba0f3f17eb8524427fe210d6e>&,_Ty1,_Ty2) noexcept(<expr>)' en cours de compilation
+          with
+          [
+              _Pr=GestionnaireTables::getMeilleureTable::<lambda_3265f62ba0f3f17eb8524427fe210d6e>,
+              _Ty1=Table *const &,
+              _Ty2=Table *const &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\algorithm(5239): note: voir la référence à l'instanciation de la fonction modèle '_FwdIt std::_Min_element_unchecked<std::_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>,std::_Iterator_base0>,_Fn>(_FwdIt,_FwdIt,_Pr)' en cours de compilation
+          with
+          [
+              _FwdIt=std::_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<Table *>>,std::_Iterator_base0>,
+              _Ty=Table *,
+              _Fn=GestionnaireTables::getMeilleureTable::<lambda_3265f62ba0f3f17eb8524427fe210d6e>,
+              _Pr=GestionnaireTables::getMeilleureTable::<lambda_3265f62ba0f3f17eb8524427fe210d6e>
+          ]
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\gestionnairetables.cpp(57): note: voir la référence à l'instanciation de la fonction modèle '_FwdIt std::min_element<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,GestionnaireTables::getMeilleureTable::<lambda_3265f62ba0f3f17eb8524427fe210d6e>>(_FwdIt,_FwdIt,_Pr)' en cours de compilation
+          with
+          [
+              _FwdIt=std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<Table *>>>,
+              _Ty=Table *,
+              _Pr=GestionnaireTables::getMeilleureTable::<lambda_3265f62ba0f3f17eb8524427fe210d6e>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\xutility(1108): error C2056: expression non conforme
+  main.cpp
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(47): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(47): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(47): error C2238: jetons inattendus avant ';'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(71): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(71): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(71): error C2238: jetons inattendus avant ';'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(80): error C2065: 'Menu' : identificateur non déclaré
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(80): error C2059: erreur de syntaxe : '>'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(81): error C2065: 'Menu' : identificateur non déclaré
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(81): error C2059: erreur de syntaxe : '>'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(82): error C2065: 'Menu' : identificateur non déclaré
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(82): error C2059: erreur de syntaxe : '>'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\main.cpp(24): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\main.cpp(25): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\main.cpp(26): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\main.cpp(32): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\main.cpp(33): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\main.cpp(34): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\main.cpp(39): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\main.cpp(40): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\main.cpp(46): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\main.cpp(49): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\main.cpp(52): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\main.cpp(90): warning C4018: '<' : incompatibilité signed/unsigned
+  Restaurant.cpp
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(47): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(47): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(47): error C2238: jetons inattendus avant ';'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(71): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(71): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(71): error C2238: jetons inattendus avant ';'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(80): error C2065: 'Menu' : identificateur non déclaré
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(80): error C2059: erreur de syntaxe : '>'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(81): error C2065: 'Menu' : identificateur non déclaré
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(81): error C2059: erreur de syntaxe : '>'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(82): error C2065: 'Menu' : identificateur non déclaré
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(82): error C2059: erreur de syntaxe : '>'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(22): error C2061: erreur de syntaxe : identificateur 'Menu'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(22): error C2143: erreur de syntaxe : absence de ';' avant '{'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(22): error C2612: '}' de fin non conforme dans une liste d'initialiseurs de base/membre
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(22): error C2059: erreur de syntaxe : ','
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(23): error C2143: erreur de syntaxe : absence de ';' avant '{'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(23): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(23): error C2059: erreur de syntaxe : ','
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(24): error C2143: erreur de syntaxe : absence de ';' avant '{'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(24): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(24): error C2059: erreur de syntaxe : ','
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(25): error C2143: erreur de syntaxe : absence de ';' avant '{'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(25): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(26): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(34): error C2541: 'delete' : impossible de détruire des objets qui ne sont pas des pointeurs
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(35): error C2541: 'delete' : impossible de détruire des objets qui ne sont pas des pointeurs
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(36): error C2541: 'delete' : impossible de détruire des objets qui ne sont pas des pointeurs
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(70): error C2511: 'double Restaurant::getFraisLivraison(int) const' : impossible de trouver la fonction membre surchargée dans 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(71): error C2597: référence non conforme à un membre non static 'Restaurant::fraisLivraison_'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(71): error C3867: 'Restaurant::fraisLivraison_' : syntaxe non-standard ; utilisez '&' pour créer un pointeur vers un membre
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(71): error C2109: un indice requiert un type tableau ou pointeur
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(102): error C2065: 'Menu' : identificateur non déclaré
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(102): error C2065: 'menu' : identificateur non déclaré
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(102): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(103): error C3861: 'getNomTypeMenu' : identificateur introuvable
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(104): error C2065: 'menu' : identificateur non déclaré
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(106): error C2065: 'menu' : identificateur non déclaré
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(115): error C3861: 'menuActuel' : identificateur introuvable
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(179): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(179): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(179): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(180): error C2270: 'getMenu' : modificateurs non autorisés sur les fonctions non membres
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(180): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(180): error C2059: erreur de syntaxe : '{'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(180): error C2143: erreur de syntaxe : absence de ';' avant '{'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(180): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(190): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(190): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(190): error C2086: 'int Menu' : redéfinition
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(179): note: voir la déclaration de 'Menu'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(190): error C2039: 'menuActuel' : n'est pas membre de 'Restaurant'
+  c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(191): error C2270: 'menuActuel' : modificateurs non autorisés sur les fonctions non membres
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(191): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(191): error C2059: erreur de syntaxe : '{'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(191): error C2143: erreur de syntaxe : absence de ';' avant '{'
+c:\users\lauzo\inf1010\tp5\tp5\tp5\tp5_source\restaurant.cpp(191): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+  Génération de code en cours...

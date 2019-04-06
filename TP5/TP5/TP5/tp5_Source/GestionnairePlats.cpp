@@ -9,7 +9,7 @@
 #include "PlatBio.h"
 #include "PlatVege.h"
 #include "PlatBioVege.h"
-
+#include <iterator>
 
 
 void GestionnairePlats::lirePlats(const string& nomFichier, TypeMenu type)
@@ -50,3 +50,91 @@ pair<string, Plat*> GestionnairePlats::lirePlatDe(LectureFichierEnSections& fich
 }
 
 
+GestionnairePlats::GestionnairePlats(const string& nomFichier, TypeMenu type): type_(type) {
+	lirePlats(nomFichier, type);
+} //TODO
+
+
+GestionnairePlats::GestionnairePlats(GestionnairePlats* gestionnaire):type_(gestionnaire->getType()) {
+	map<string, Plat*>::iterator debut = gestionnaire->getConteneur().begin();
+	map<string, Plat*>::iterator fin = gestionnaire->getConteneur().end();
+	copy(debut, fin, conteneur_);
+} // TODO
+
+GestionnairePlats::~GestionnairePlats() {
+	map<string, Plat*>::iterator debut = getConteneur().begin();
+	map<string, Plat*>::iterator fin = getConteneur().end();
+	conteneur_.erase(debut, fin);
+	conteneur_.clear();
+
+} // TODO
+
+TypeMenu GestionnairePlats::getType() const {
+	return type_;
+} // TODO
+
+
+
+
+Plat* GestionnairePlats::allouerPlat(Plat* plat) {
+	return plat->clone();
+} // TODO
+
+Plat* GestionnairePlats::trouverPlatMoinsCher() const {
+	auto c = getConteneur();
+	return (*min_element(c.begin(), c.end(), FoncteurPlatMoinsCher())).second;
+}
+
+
+
+
+Plat* GestionnairePlats::trouverPlatPlusCher() const {
+	map<string, Plat*>::iterator debut = getConteneur().begin();
+	map<string, Plat*>::iterator fin = getConteneur().end();
+
+	
+	auto platTrouve = [](pair<string, Plat*> plat1, pair<string, Plat*> plat2) ->bool {
+		if (plat1.second->getPrix() < plat2.second->getPrix()) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	};
+
+	return (*max_element(debut, fin, platTrouve)).second;
+
+} 
+
+Plat* GestionnairePlats::trouverPlat(const string& nom) const {
+	map<string, Plat*>::iterator debut = getConteneur().begin();
+	map<string, Plat*>::iterator fin = getConteneur().end();
+
+	auto platTrouve = [nom](pair<string, Plat*> plat) ->bool {
+		if (plat.first == nom) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	};
+
+	return (*find_if(debut, fin, platTrouve)).second;
+
+} // TODO
+vector<pair<string, Plat*>> GestionnairePlats::getPlatsEntre(double borneInf, double borneSup) {
+	vector<pair<string, Plat*>> vecteurResul;
+	map<string, Plat*>::iterator debut = getConteneur().begin();
+	map<string, Plat*>::iterator fin = getConteneur().end();
+
+	copy_if(debut, fin, back_inserter(vecteurResul), FoncteurIntervalle(borneInf, borneSup));
+	return vecteurResul;
+} // TODO
+
+void GestionnairePlats::afficherPlats(ostream& os) {
+	map<string, Plat*>::iterator debut = getConteneur().begin();
+	map<string, Plat*>::iterator fin = getConteneur().end();
+	for (debut; debut != fin; debut++) {
+		(*debut).second->afficherPlat(os);
+	}
+}

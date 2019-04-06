@@ -12,10 +12,12 @@
 using namespace std;
 
 
-class FoncteurPlatMoinsCher: public GestionnairePlats
+class FoncteurPlatMoinsCher
 { // TODO
-	bool operator()(const pair<string, Plat*> &plat1, const pair<string, Plat*> &plat2) {
-		return (plat1.second->getPrix() <= plat2.second->getPrix());
+public:
+	FoncteurPlatMoinsCher() {};
+	bool operator()(const pair<string, Plat*> plat1, const pair<string, Plat*> plat2) {
+		return (plat1.second->getPrix() < plat2.second->getPrix());
 	}
 };
 
@@ -23,12 +25,13 @@ class FoncteurIntervalle
 {
 public: 
    // TODO
-	bool operator()(const pair<string, Plat*> &plat) {
-		return (borneInf_ <= plat.second->getPrix() && plat.second->getPrix() <= borneSup_);
+	FoncteurIntervalle(double min, double max) :borneInf_(min), borneSup_(max) {};
+	bool operator()(const pair<string, Plat*> plat) {
+		return (borneInf_ < plat.second->getPrix() && plat.second->getPrix() < borneSup_);
 	}
 
 private:
-	int borneSup_;
-	int borneInf_;
+	double borneSup_;
+	double borneInf_;
 };
 

@@ -18,14 +18,13 @@ class GestionnaireGenerique
 {
 public:
 	C getConteneur() const {
-		map<string, Plat*> copie(conteneur_);
-		return copie;
+		return C(conteneur_);
 	} //TODO
 	void ajouter(T t) {
 		conteneur_.insert(t);
 	}//TODO
 	int getNombreElements() const {
-		return size_t size(conteneur_);
+		return conteneur_.size();
 	
 	
 	}//TODO
